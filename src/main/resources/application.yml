@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: apivendaPdv
+nats.addresses:
+- nats://localhost:4222
