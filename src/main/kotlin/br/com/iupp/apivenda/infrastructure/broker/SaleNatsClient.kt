@@ -10,4 +10,7 @@ interface SaleNatsClient {
 
     @Subject("event.product")
     fun sendSale(eventsInformation: EventsInformation)
+
+    @Subject("event.product")
+    fun deleteSale(eventsInformation: EventsInformation)
 }

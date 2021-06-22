@@ -5,13 +5,10 @@ import br.com.iupp.apivenda.model.EventsInformation
 class SaleNatsClientImpl : SaleNatsClient {
 
     override fun sendSale(eventsInformation: EventsInformation) {
-        println("evento : ${eventsInformation.event}")
-        println("Product ID : ${eventsInformation.sale.productId} " +
-                "Qty: ${eventsInformation.sale.qty}")
-
-        sendSale(eventsInformation)
-
+        sendSale(eventsInformation = eventsInformation)
     }
 
-
+    override fun deleteSale(eventsInformation: EventsInformation) {
+        deleteSale(eventsInformation = eventsInformation)
+    }
 }
